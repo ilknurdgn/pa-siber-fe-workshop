@@ -39,6 +39,12 @@ nav {
   margin-right: 20px;
   color: #fff;
   text-transform: capitalize;
+  border: none;
+  transition: 0.9s all ease-in-out;
+}
+
+.nav-container ul .nav-link:hover {
+  border-bottom: 1px solid white;
 }
 .nav-container ul .nav-link:last-child {
   margin-right: 0;
@@ -47,7 +53,7 @@ nav {
 main {
   width: 100%;
   height: calc(100% - 90px);
-  background-color: #ffdd55;
+  background-color: #eddbc0;
   padding: 75px 150px 75px 30px;
 }
 main .main-container {
@@ -92,15 +98,16 @@ main .main-container .main-infos-content .button-content button {
   padding: 10px 34px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: black;
+  background-color: #9f8772;
   color: white;
   font-weight: 700;
   font-size: 25px;
-  box-shadow: 4px 4px 0px 0px #eb7711bf;
+  box-shadow: 4px 4px 0px 0px #665a48;
   transition: 0.3s all ease-in-out;
 }
 main .main-container .main-infos-content .button-content button:hover {
-  box-shadow: -4px -4px 0px 0px #eb7711bf;
+  box-shadow: -4px -4px 0px 0px #dbc8ac;
+  animation: shake 0.3s 2 linear;
 }
 
 main .main-container .main-image {
@@ -109,6 +116,66 @@ main .main-container .main-image {
 main .main-container .main-image img {
   width: 500px;
   height: 100%;
-  box-shadow: 6px 6px 0px 0px #eb7711bf;
+  box-shadow: 6px 6px 0px 0px #665a48;
   border-radius: 10px;
+}
+
+.social-container {
+  position: absolute;
+  right: 25px;
+  top: 40%;
+}
+
+.social-container a .social-item {
+  font-size: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.social-container a .social-item.instagram:hover {
+  background-color: #e4405f;
+  color: white;
+}
+
+.social-container a .social-item.twitter:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.social-container a .social-item.github:hover {
+  background-color: #171515;
+  color: white;
+}
+
+.social-container a .social-item.linkedin:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
