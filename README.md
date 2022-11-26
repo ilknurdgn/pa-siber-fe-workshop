@@ -1,1 +1,1 @@
-# pa-siber-fe-workshop
+# pau-siber-fe-workshop
